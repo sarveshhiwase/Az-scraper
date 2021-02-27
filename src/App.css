@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  font-size: 30px;
+  background: #1d2d50;
+  animation: 14s ease 0s infinite alternate none running dyjhSq;
+}
+@keyframes dyjhSq {
+  25% {
+    background: #133b5c;
+  }
+  50% {
+    background: #252f3f;
+  }
+
+  75% {
+    background: #1a1a2e;
+  }
+
+  100% {
+    background: #0f3460;
+  }
+}
+.sad {
+  background: -webkit-linear-gradient(#537dff, #ff5f49, #e58aeb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: white;
+}
+
+.forms {
+  display: flex;
+  flex-grow: 0.7;
+  justify-content: center;
+  align-items: center;
+  background-color: gainsboro;
+}
+.forms input[type="search"] {
+  width: 90%;
+}
+.forms span,
+input {
+  padding: 10px;
+}
+.forms span {
+  color: grey;
+}
+
+.forms input,
+button {
+  border: none;
+  background-color: gainsboro;
+  outline: none;
+}
+.forms button {
+  background-color: black;
+  color: white;
+  padding: 20px 15px;
+  font-weight: bold;
+}
+.signup,
+.signin {
+  padding: 20px;
+  font-size: 24px;
+  text-decoration: none;
+}
+.siteicon {
+  font-weight: bold;
+  font-size: 24px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .signers {
+    order: 2;
+  }
+  .forms {
+    order: 3;
+    flex-grow: 3;
+    margin-top: 20px;
+  }
+  .forms input[type="search"] {
+    width: 90%;
+  }
+  .signup,
+  .signin {
+    font-size: 16px;
+  }
+  .siteicon {
+    font-size: 16px;
+  }
+}
