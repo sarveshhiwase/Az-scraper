@@ -11,6 +11,7 @@ exports.handler = async (event, context) => {
   try {
     //Handle Success
     const html = await proxiedRequest.get(url);
+    console.log(html)
     const lyrics = getLyrics(html);
     const sendObj = { lyrics };
     return {
@@ -19,6 +20,7 @@ exports.handler = async (event, context) => {
     };
   } catch (e) {
     //handle error
+    console.log(e)
     const sendError = { error: "Sorry song or artist couldn't be found" };
     return {
       statusCode: 404,
